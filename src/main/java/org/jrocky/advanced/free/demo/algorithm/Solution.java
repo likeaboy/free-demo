@@ -16,6 +16,9 @@ class Solution {
         int rst = 1;
         int tmp = nums[0];
         for(int i=1;i<nums.length;i++){
+        	
+        	
+        	
             if(tmp == nums[i])
                 continue;
             rst++;
