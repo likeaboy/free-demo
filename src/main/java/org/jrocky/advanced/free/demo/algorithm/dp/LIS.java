@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 最长子序列
+ * 最长递增子序列
  * @author wangzhijie
  *
  */
 public class LIS {
 	//LIS
-	//5,3,4,8,6,7
+	//5,3,4,8,6,7（必须连续）
 	public static void lis(int[] A){
 //		List<List<Integer>> rst = new ArrayList<List<Integer>>();
 		List<Integer> tmp = new ArrayList<Integer>();
@@ -55,7 +55,7 @@ public class LIS {
 	}
 	
 	public static void main(String[] args) {
-		int[] A = new int[]{5,3,4,8,6,7};
+		int[] A = new int[]{5,3,4,7,6,8};
 //		int[] A = new int[]{1,3,5,5,6,9,2,7};
 		System.out.println("lis:");
 		lis(A);

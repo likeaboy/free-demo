@@ -6,6 +6,7 @@ package org.jrocky.advanced.free.demo.algorithm.dp;
  * @author wangzhijie
  * 
  *         参考：https://segmentfault.com/a/1190000002641054
+ *         https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97.md
  */
 public class LCS {
 
@@ -52,8 +53,8 @@ public class LCS {
 	}
 
 	public static void main(String[] args) {
-		char[] X = new char[] { 'B', 'D', 'C', 'A', 'B', 'A' };
-		char[] Y = new char[] { 'A', 'B', 'C', 'B', 'D', 'A', 'B' };
+		char[] X = new char[] { 'A', 'B', 'C', 'B', 'D', 'A', 'B' };
+		char[] Y = new char[] { 'B', 'D', 'C', 'A', 'B', 'A' };
 		StringBuilder rst = new StringBuilder();
 		int[][] c = lengthofLCS(X, Y);
 		print(c, X, Y, X.length, Y.length,rst);
