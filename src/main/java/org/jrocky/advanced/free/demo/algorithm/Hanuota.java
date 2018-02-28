@@ -17,10 +17,7 @@ public class Hanuota {
 	}
 	//打印全过程
 	public static void move(int n,char a,char b,char c){
-		if(n == 1) {
-			System.out.println(a+"-->"+c);
-			return;
-		}
+		if(n==0) return;
 		move(n-1,a,c,b);
 		System.out.println(a+"-->"+c);
 		move(n-1,b,a,c);
